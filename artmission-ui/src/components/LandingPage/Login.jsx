@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { userLogin } from '../../services/userServices';
 import { Link } from 'react-router-dom';
+import SignUpPage from './SignUpPage';
 
 //Login container
 const Login = () => {
@@ -50,7 +51,8 @@ const Login = () => {
             </form>
             {message && <p>{message}</p>}
             <div className="footer">
-                {/* TODO not a member/register link */}
+                Not a member?
+                <Link to='/signup'>Sign up here!</Link>
             </div>
         </div>
     )
