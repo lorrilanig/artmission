@@ -29,8 +29,29 @@ const Login = () => {
     };
 
     return(
-        <div>
-            
+        <div className="container">
+            <div>
+                <h2>Login</h2>
+                <div className="underline"></div>
+            </div>
+            <form onSubmit={handleSubmit}>
+                <div className="inputs">
+                    <div className="input">
+                        <input type="email" name="email" value={email} placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} required />
+                    </div>
+                    <br></br>
+                    <div className="input">
+                        <input type="password" name="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+                    </div>
+                </div>
+                <div className="submit-container">
+                    <button type="submit" className="submit">Login</button>
+                </div>
+            </form>
+            {message && <p>{message}</p>}
+            <div className="footer">
+                {/* TODO not a member/register link */}
+            </div>
         </div>
     )
 
