@@ -28,7 +28,8 @@ const Login = () => {
             setMessage("Incorrect Email or Password. Please Try Again.")
         }
     };
-
+    //TODO : add pop up window instead of signup page redirect
+    //TODO : Add Profile Logic, if a user does not have profile created, direct them to the form. Users can set their profiles as Artists, default is a patron profile
     return(
         <div className="container">
             <div>
